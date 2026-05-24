@@ -218,7 +218,7 @@ export default function App() {
     }
     if (isOverBudget)
       setToast(
-        "Tray over budget: boleh lanjut, tapi skor budget kena penalti.",
+        "Ompreng over budget: boleh lanjut, tapi skor budget kena penalti.",
       );
     clearCookingTimers();
     const plan = getCookingPlan(tray, spent, challenge.budget, speedLevel);
