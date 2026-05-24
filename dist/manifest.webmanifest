@@ -1,0 +1,13 @@
+{
+  "name": "Makanan Bergizi Gems",
+  "short_name": "MB Gems",
+  "description": "Retro pixel-art cooking strategy game tentang makanan sekolah bergizi dengan budget Rp10.000.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#fff4d6",
+  "theme_color": "#f48a3d",
+  "icons": [
+    { "src": "/icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

@@ -1,0 +1,42 @@
+export const upgrades = [
+  {
+    id: "kompor-cepat",
+    name: "Kompor cepat",
+    max: 5,
+    baseCost: 80,
+    requiredLevel: 1,
+    description: "Mempercepat fase masak dan bonus waktu.",
+  },
+  {
+    id: "rak-segar",
+    name: "Rak segar",
+    max: 5,
+    baseCost: 70,
+    requiredLevel: 2,
+    description: "Meningkatkan freshness bahan.",
+  },
+  {
+    id: "bumbu-racik",
+    name: "Bumbu racik",
+    max: 5,
+    baseCost: 90,
+    requiredLevel: 3,
+    description: "Menaikkan kualitas rasa dan kepuasan.",
+  },
+  {
+    id: "dekor-dapur",
+    name: "Dekor dapur",
+    max: 5,
+    baseCost: 60,
+    requiredLevel: 4,
+    description: "Meningkatkan mood siswa sebelum makan.",
+  },
+  {
+    id: "kotak-bekal",
+    name: "Kotak bekal",
+    max: 5,
+    baseCost: 100,
+    requiredLevel: 5,
+    description: "Membuka lebih banyak kombinasi menu.",
+  },
+];
