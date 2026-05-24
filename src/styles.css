@@ -169,9 +169,17 @@ button { font: inherit; }
 }
 
 .pixel-stage {
-  height: 224px;
+  width: 100%;
+  aspect-ratio: 360 / 200;
   background: #9edcf0;
   border-bottom: 4px solid #3d2a20;
+  line-height: 0;
+  overflow: hidden;
+}
+.pixel-stage canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
 }
 .loading-stage {
   display: grid;

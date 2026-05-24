@@ -403,7 +403,7 @@ export default function App() {
         {screen === "menu" && (
           <Panel>
             <div className="hero-copy">
-              <h2>Dapur MBGems, gizi serius, budget ketat.</h2>
+              <h2>Dapur MBGems</h2>
               <p>
                 Bantu rakit menu sekolah yang enak, realistis, dan tetap ramah
                 anggaran.
