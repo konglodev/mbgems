@@ -15,6 +15,7 @@ import {
   Volume2,
   VolumeX,
   Wrench,
+  X,
 } from "lucide-react";
 import { Suspense, lazy, useEffect, useMemo, useRef, useState } from "react";
 import { categoryLabels, ingredients } from "./data/ingredients";
@@ -66,6 +67,7 @@ const categories: Category[] = [
 ];
 const PhaserStage = lazy(() => import("./components/PhaserStage"));
 const BASE_SECONDS = 135;
+const TRAKTEER_URL = "https://trakteer.id/aripppjn_";
 
 export default function App() {
   const [screen, setScreen] = useState<Screen>("menu");
@@ -82,6 +84,7 @@ export default function App() {
   const [toast, setToast] = useState<string | null>(null);
   const [crt, setCrt] = useState(false);
   const [soundOn, setSoundOn] = useState(true);
+  const [donationOpen, setDonationOpen] = useState(true);
   const [installPrompt, setInstallPrompt] = useState<any>(null);
   const cookingIntervalRef = useRef<number | null>(null);
   const cookingTimeoutRef = useRef<number | null>(null);
@@ -313,6 +316,39 @@ export default function App() {
     <main className={crt ? "app crt" : "app"}>
       <section className="phone-shell">
         {toast && <div className="toast">{toast}</div>}
+        {donationOpen && (
+          <div className="modal-backdrop" role="dialog" aria-modal="true">
+            <div className="donation-modal">
+              <button
+                className="modal-close"
+                onClick={() => setDonationOpen(false)}
+                aria-label="Tutup modal donasi"
+              >
+                <X size={18} />
+              </button>
+              <span className="food-pixel donation-gem" />
+              <h2>Suka Makanan Bergizi Gems?</h2>
+              <p>
+                Dukung pengembangan game hiburan ini lewat Trakteer. Donasi
+                membantu nambah fitur, balancing, dan polish pixel art.
+              </p>
+              <a
+                className="donation-action"
+                href={TRAKTEER_URL}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Dukung Saya di Trakteer
+              </a>
+              <button
+                className="donation-skip"
+                onClick={() => setDonationOpen(false)}
+              >
+                Lanjut main
+              </button>
+            </div>
+          </div>
+        )}
         <header className="topbar">
           <button
             className="icon-btn"
