@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Makanan Bergizi Gems
 
 Retro pixel-art cooking strategy game about building nutritious Indonesian school meals with a Rp10.000 budget.
@@ -110,8 +109,10 @@ After deployment, users can install the game from supported mobile browsers.
 
 ## License
 
-This project is currently private/prototype code. Add a license before publishing publicly if needed.
-=======
+# This project is currently private/prototype code. Add a license before publishing publicly if needed.
+
 # mbgems
+
 A pixel art style nutritious food strategy game with a budget of Rp. 10,000.
->>>>>>> 2a4926a35c6d04166c93c2a11dd388d2f3663e6e
+
+> > > > > > > 2a4926a35c6d04166c93c2a11dd388d2f3663e6e
