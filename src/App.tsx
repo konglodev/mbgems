@@ -589,7 +589,7 @@ export default function App() {
                 )}
               </b>
               <span>
-                {trayItems(tray).length} bahan di tray. Kompor cepat Lv{" "}
+                {trayItems(tray).length} bahan di ompreng. Kompor cepat Lv{" "}
                 {speedLevel} mengurangi waktu masak.
               </span>
               <div className="cook-progress">
